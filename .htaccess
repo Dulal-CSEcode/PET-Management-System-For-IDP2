@@ -1,0 +1,21 @@
+RewriteEngine On
+
+# Handle redirects for missing pages
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^other-pets\.html$ other-pets.html [L]
+
+# Handle API errors
+ErrorDocument 404 /error.html
+
+# Allow access to js and css files
+<FilesMatch "\.(js|css|jpg|png|gif|ico)$">
+  Order allow,deny
+  Allow from all
+</FilesMatch>
+
+# PHP settings
+php_flag display_errors Off
+php_value upload_max_filesize 10M
+php_value post_max_size 20M
+php_value max_execution_time 120 

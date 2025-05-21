@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Veterinary Services - PET Management System</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Veterinary Services" name="keywords">
+    <meta content="Book appointments with our partner veterinary clinics" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid border-bottom d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Our Office</h6>
+                        <span>Kurmitola, Airport, Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email Us</h6>
+                        <span>pet.info@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Call Us</h6>
+                        <span>+8801700000000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>PET Management System</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="adoption.html" class="nav-item nav-link">Adoption</a>
+                <a href="veterinary.html" class="nav-item nav-link active">Veterinary</a>
+                <a href="product.html" class="nav-item nav-link">Product</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                        <a href="team.html" class="dropdown-item">The Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                        <a href="detail.html" class="dropdown-item">Blog Detail</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="#" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="display-1 text-uppercase text-dark mb-lg-4">Veterinary Services</h1>
+                    <h1 class="text-uppercase text-white mb-lg-4">Professional Pet Care</h1>
+                    <p class="fs-4 text-white mb-lg-4">Book appointments with our trusted veterinary partners</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Veterinary Clinics Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5">
+                <h6 class="text-primary text-uppercase">Clinics</h6>
+                <h1 class="display-5 text-uppercase mb-0">Our Partner Veterinary Clinics</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="bg-light p-5 rounded">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="img/Clinic_image/Clinic 1.jpg" class="img-fluid rounded mb-3" alt="PetCare Clinic">
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="text-uppercase mb-3">PetCare Clinic</h3>
+                                <p class="mb-4"><i class="bi bi-geo-alt text-primary me-2"></i>Kurmitola, Airport, Dhaka</p>
+                                <p class="mb-4"><i class="bi bi-telephone text-primary me-2"></i>+8801700000001</p>
+                                <p class="mb-4"><i class="bi bi-envelope text-primary me-2"></i>petcare@example.com</p>
+                                <p class="mb-4"><i class="bi bi-clock text-primary me-2"></i>Mon-Sat: 9AM-6PM</p>
+                                <button class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-clinic-id="1">Book Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light p-5 rounded">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="img/Clinic_image/Clinic 2.jpg" class="img-fluid rounded mb-3" alt="Animal Health Center">
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="text-uppercase mb-3">Animal Health Center</h3>
+                                <p class="mb-4"><i class="bi bi-geo-alt text-primary me-2"></i>Banani, Dhaka</p>
+                                <p class="mb-4"><i class="bi bi-telephone text-primary me-2"></i>+8801700000002</p>
+                                <p class="mb-4"><i class="bi bi-envelope text-primary me-2"></i>ahc@example.com</p>
+                                <p class="mb-4"><i class="bi bi-clock text-primary me-2"></i>Mon-Fri: 10AM-8PM</p>
+                                <button class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-clinic-id="2">Book Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light p-5 rounded">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="img/Clinic_image/Clinic 3.jpg" class="img-fluid rounded mb-3" alt="Pet Wellness Center">
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="text-uppercase mb-3">Pet Wellness Center</h3>
+                                <p class="mb-4"><i class="bi bi-geo-alt text-primary me-2"></i>Gulshan, Dhaka</p>
+                                <p class="mb-4"><i class="bi bi-telephone text-primary me-2"></i>+8801700000003</p>
+                                <p class="mb-4"><i class="bi bi-envelope text-primary me-2"></i>wellness@example.com</p>
+                                <p class="mb-4"><i class="bi bi-clock text-primary me-2"></i>Mon-Fri: 9AM-7PM</p>
+                                <button class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-clinic-id="3">Book Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light p-5 rounded">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="img/Clinic_image/Clinic 4.jpg" class="img-fluid rounded mb-3" alt="Emergency Pet Hospital">
+                            </div>
+                            <div class="col-md-8">
+                                <h3 class="text-uppercase mb-3">Emergency Pet Hospital</h3>
+                                <p class="mb-4"><i class="bi bi-geo-alt text-primary me-2"></i>Mirpur, Dhaka</p>
+                                <p class="mb-4"><i class="bi bi-telephone text-primary me-2"></i>+8801700000004</p>
+                                <p class="mb-4"><i class="bi bi-envelope text-primary me-2"></i>emergency@example.com</p>
+                                <p class="mb-4"><i class="bi bi-clock text-primary me-2"></i>24/7 Emergency Care</p>
+                                <button class="btn btn-primary py-2 px-4" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-clinic-id="4">Book Appointment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Veterinary Clinics End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5">
+                <h6 class="text-primary text-uppercase">Services</h6>
+                <h1 class="display-5 text-uppercase mb-0">Our Veterinary Services</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-vaccine display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Vaccination</h5>
+                            <p>Regular vaccinations to protect your pets from common diseases</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-cat display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Surgery</h5>
+                            <p>Professional surgical procedures for your pet's health needs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-dog display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Dental Care</h5>
+                            <p>Complete dental care services to maintain your pet's oral health</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item bg-light d-flex p-4">
+                        <i class="flaticon-dog-eating display-1 text-primary me-4"></i>
+                        <div>
+                            <h5 class="text-uppercase mb-3">Health Check</h5>
+                            <p>Regular health check-ups and preventive care for your pets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Appointment Booking Modal -->
+    <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="appointmentModalLabel">Book an Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="appointmentForm">
+                        <div class="mb-3">
+                            <label for="petId" class="form-label">Select Your Pet</label>
+                            <select class="form-select" id="petId" required>
+                                <!-- Options will be filled dynamically -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appointmentDate" class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="appointmentDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="appointmentTime" class="form-label">Preferred Time</label>
+                            <input type="time" class="form-control" id="appointmentTime" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reason" class="form-label">Reason for Visit</label>
+                            <textarea class="form-control" id="reason" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Services Required</label>
+                            <div id="serviceCheckboxes" class="border p-3 rounded">
+                                <!-- Service checkboxes will be added dynamically -->
+                            </div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Book Appointment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Get In Touch</h5>
+                    <p class="mb-4">Contact us for any questions about veterinary services</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Kurmitola, Airport, Dhaka, Bangladesh</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>pet.info@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+8801700000000</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Services</a>
+                        <a class="text-body mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Products</a>
+                        <a class="text-body" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Newsletter</h5>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" placeholder="Your Email">
+                            <button class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white" href="#">Pet Management System</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Add this script to load pet data and services for the appointment form -->
+    <script>
+        // Load user's pets when appointment modal is opened
+        document.addEventListener('DOMContentLoaded', function() {
+            // Attach event listener to all appointment booking buttons
+            const appointmentButtons = document.querySelectorAll('[data-bs-target="#appointmentModal"]');
+            appointmentButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const clinicId = this.getAttribute('data-clinic-id');
+                    loadUserPets();
+                    loadClinicServices(clinicId);
+                    // Store the clinic ID in a hidden input
+                    document.getElementById('appointmentForm').innerHTML += `<input type="hidden" id="clinicId" value="${clinicId}">`;
+                });
+            });
+            
+            // Handle appointment form submission
+            document.getElementById('appointmentForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
+                const user = isAuthenticated ? JSON.parse(localStorage.getItem('user')) : null;
+                
+                if (!isAuthenticated || !user) {
+                    alert('Please login to book an appointment');
+                    $('#appointmentModal').modal('hide');
+                    $('#loginModal').modal('show');
+                    return;
+                }
+                
+                const petId = document.getElementById('petId').value;
+                const clinicId = document.getElementById('clinicId').value;
+                const appointmentDate = document.getElementById('appointmentDate').value;
+                const appointmentTime = document.getElementById('appointmentTime').value;
+                const reason = document.getElementById('reason').value;
+                
+                // Get selected services
+                const selectedServices = [];
+                document.querySelectorAll('input[name="service"]:checked').forEach(checkbox => {
+                    selectedServices.push(parseInt(checkbox.value));
+                });
+                
+                if (selectedServices.length === 0) {
+                    alert('Please select at least one service');
+                    return;
+                }
+                
+                try {
+                    const response = await fetch('api/appointments.php', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            pet_id: petId,
+                            clinic_id: clinicId,
+                            appointment_date: appointmentDate,
+                            appointment_time: appointmentTime,
+                            reason: reason,
+                            services: selectedServices
+                        })
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (data.success) {
+                        alert('Appointment booked successfully!');
+                        $('#appointmentModal').modal('hide');
+                        this.reset();
+                    } else {
+                        alert(`Error: ${data.error || 'Failed to book appointment'}`);
+                    }
+                } catch (error) {
+                    console.error('Error booking appointment:', error);
+                    alert('An error occurred. Please try again later.');
+                }
+            });
+        });
+        
+        // Function to load user's pets
+        async function loadUserPets() {
+            try {
+                const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
+                const user = isAuthenticated ? JSON.parse(localStorage.getItem('user')) : null;
+                
+                if (!isAuthenticated || !user) {
+                    alert('Please login to book an appointment');
+                    $('#appointmentModal').modal('hide');
+                    $('#loginModal').modal('show');
+                    return;
+                }
+                
+                const response = await fetch(`api/pets.php?user_id=${user.id}`);
+                const data = await response.json();
+                
+                const petSelect = document.getElementById('petId');
+                petSelect.innerHTML = '';
+                
+                if (data.success && data.data && data.data.length > 0) {
+                    data.data.forEach(pet => {
+                        const option = document.createElement('option');
+                        option.value = pet.id;
+                        option.textContent = `${pet.name} (${pet.type || pet.breed || 'Pet'})`;
+                        petSelect.appendChild(option);
+                    });
+                } else {
+                    const option = document.createElement('option');
+                    option.value = '';
+                    option.textContent = 'No pets found. Please add a pet first.';
+                    option.disabled = true;
+                    option.selected = true;
+                    petSelect.appendChild(option);
+                }
+            } catch (error) {
+                console.error('Error loading pets:', error);
+            }
+        }
+        
+        // Function to load clinic services
+        async function loadClinicServices(clinicId) {
+            try {
+                const response = await fetch(`api/services.php?clinic_id=${clinicId}`);
+                const data = await response.json();
+                
+                const servicesContainer = document.getElementById('serviceCheckboxes');
+                servicesContainer.innerHTML = '';
+                
+                if (data.success && data.data && data.data.length > 0) {
+                    data.data.forEach(service => {
+                        const serviceDiv = document.createElement('div');
+                        serviceDiv.className = 'form-check';
+                        serviceDiv.innerHTML = `
+                            <input class="form-check-input" type="checkbox" name="service" value="${service.id}" id="service-${service.id}">
+                            <label class="form-check-label" for="service-${service.id}">
+                                ${service.name} - BDT: ${service.price}
+                            </label>
+                        `;
+                        servicesContainer.appendChild(serviceDiv);
+                    });
+                } else {
+                    servicesContainer.innerHTML = '<p class="text-center">No services available for this clinic</p>';
+                }
+            } catch (error) {
+                console.error('Error loading services:', error);
+            }
+        }
+    </script>
+</body>
+</html> 

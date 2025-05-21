@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin Panel - PET Management System</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Admin Panel" name="keywords">
+    <meta content="Manage pets, categories, and users" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid border-bottom d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Our Office</h6>
+                        <span>Kurmitola, Airport, Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email Us</h6>
+                        <span>pet.info@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Call Us</h6>
+                        <span>+8801700000000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>PET Management System</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="admin.html" class="nav-item nav-link active">Admin</a>
+                <a href="#" class="nav-item nav-link" id="logoutBtn">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Admin Content Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5">
+                <h6 class="text-primary text-uppercase">Admin Panel</h6>
+                <h1 class="display-5 text-uppercase mb-0">Manage System</h1>
+            </div>
+            
+            <!-- Tabs -->
+            <ul class="nav nav-tabs mb-4" id="adminTabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pets-tab" data-bs-toggle="tab" href="#pets" role="tab">Pets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="categories-tab" data-bs-toggle="tab" href="#categories" role="tab">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="adoptions-tab" data-bs-toggle="tab" href="#adoptions" role="tab">Adoption Requests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="appointments-tab" data-bs-toggle="tab" href="#appointments" role="tab">Appointments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="users-tab" data-bs-toggle="tab" href="#users" role="tab">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pricing-orders-tab" data-bs-toggle="tab" href="#pricingPlanOrders" role="tab">Pricing Orders</a>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="adminTabContent">
+                <!-- Pets Tab -->
+                <div class="tab-pane fade show active" id="pets" role="tabpanel">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h3>Manage Pets</h3>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addPetModal">Add New Pet</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Age</th>
+                                    <th>Gender</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="petsTableBody">
+                                <!-- Pet rows will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Categories Tab -->
+                <div class="tab-pane fade" id="categories" role="tabpanel">
+                    <div class="d-flex justify-content-between mb-3">
+                        <h3>Manage Categories</h3>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCategoryModal">Add Category</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="categoriesTableBody">
+                                <!-- Category rows will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Adoption Requests Tab -->
+                <div class="tab-pane fade" id="adoptions" role="tabpanel">
+                    <h3>Adoption Requests</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Pet Name</th>
+                                    <th>User</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adoptionsTableBody">
+                                <!-- Adoption request rows will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Appointments Tab -->
+                <div class="tab-pane fade" id="appointments" role="tabpanel">
+                    <h3>Vet Appointments</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Pet Name</th>
+                                    <th>Owner</th>
+                                    <th>Clinic</th>
+                                    <th>Date</th>
+                                    <th>Services</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="appointmentsTableBody">
+                                <!-- Appointment rows will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Users Tab -->
+                <div class="tab-pane fade" id="users" role="tabpanel">
+                    <h3>Manage Users</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usersTableBody">
+                                <!-- User rows will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Pricing Plan Orders Tab -->
+                <div class="tab-pane fade" id="pricingPlanOrders" role="tabpanel">
+                    <h3>Pricing Plan Orders</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>User</th>
+                                    <th>Plan</th>
+                                    <th>Price</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pricingPlanOrdersTableBody">
+                                <!-- Pricing plan order rows will be dynamically added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Admin Content End -->
+
+    <!-- Add Pet Modal -->
+    <div class="modal fade" id="addPetModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add New Pet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addPetForm">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Category</label>
+                            <select class="form-control" name="category" required>
+                                <option value="">Select Category</option>
+                                <!-- Categories will be dynamically added here -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Age</label>
+                            <input type="number" class="form-control" name="age" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Gender</label>
+                            <select class="form-control" name="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" name="description" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Image</label>
+                            <input type="file" class="form-control" name="image" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Pet</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Category Modal -->
+    <div class="modal fade" id="addCategoryModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Category</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addCategoryForm">
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" name="description" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Category</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Get In Touch</h5>
+                    <p class="mb-4">For administrative support, please contact us</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Kurmitola, Airport, Dhaka, Bangladesh</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>pet.info@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+8801700000000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white" href="#">Pet Management System</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/admin.js"></script>
+    <script>
+    document.querySelectorAll('.order-plan-btn').forEach(btn => {
+        btn.addEventListener('click', async function() {
+            const planId = this.getAttribute('data-plan-id');
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (!user) {
+                alert('Please log in to order a plan.');
+                return;
+            }
+            const response = await fetch('api/pricing_orders.php', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({user_id: user.id, plan_id: planId})
+            });
+            const data = await response.json();
+            if (data.success) {
+                alert('Your plan order has been placed!');
+            } else {
+                alert('Order failed: ' + data.error);
+            }
+        });
+    });
+    </script>
+</body>
+</html> 

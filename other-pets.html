@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Other Pets Available for Adoption - PET Management System</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Pet Adoption, Small Animals, Rabbits, Reptiles" name="keywords">
+    <meta content="Find unique pets available for adoption" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid border-bottom d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Our Office</h6>
+                        <span>Kurmitola, Airport, Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Email Us</h6>
+                        <span>pet.info@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-2">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start">
+                        <h6 class="text-uppercase mb-1">Call Us</h6>
+                        <span>+8801700000000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="m-0 text-uppercase text-dark"><i class="bi bi-shop fs-1 text-primary me-3"></i>PET Management System</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Service</a>
+                <a href="adoption.html" class="nav-item nav-link active">Adoption</a>
+                <a href="veterinary.html" class="nav-item nav-link">Veterinary</a>
+                <a href="product.html" class="nav-item nav-link">Product</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                        <a href="team.html" class="dropdown-item">The Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                        <a href="detail.html" class="dropdown-item">Blog Detail</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="#" class="nav-item nav-link bg-primary text-white px-5 ms-lg-5" data-bs-toggle="modal" data-bs-target="#loginModal">Login <i class="bi bi-person"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="display-1 text-uppercase text-dark mb-lg-4">Other Pets</h1>
+                    <h1 class="text-uppercase text-white mb-lg-4">Available for Adoption</h1>
+                    <p class="fs-4 text-white mb-lg-4">Find your perfect unique pet companion</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Other Pets Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5">
+                <h6 class="text-primary text-uppercase">Other Pets</h6>
+                <h1 class="display-5 text-uppercase mb-0">Find Your Unique Companion</h1>
+            </div>
+            <div class="row" id="others-container">
+                <!-- Pet cards will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+    <!-- Other Pets End -->
+
+    <!-- Adoption Modal -->
+    <div class="modal fade" id="adoptionModal" tabindex="-1" aria-labelledby="adoptionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="adoptionModalLabel">Adoption Request</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>You are requesting to adopt <span id="adoption-pet-name" class="fw-bold"></span> the <span id="adoption-pet-type" class="fw-bold"></span>.</p>
+                    <form id="adoptionSubmitForm">
+                        <input type="hidden" id="selected-pet-id">
+                        <input type="hidden" id="selected-pet-type">
+                        <div class="mb-3">
+                            <label for="adoption-reason" class="form-label">Why do you want to adopt this pet?</label>
+                            <textarea class="form-control" id="adoption-reason" rows="4" required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Submit Adoption Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </form>
+                    <div class="mt-3 text-center">
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</a></p>
+                        <p><a href="#" class="text-decoration-none">Forgot password?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Create Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </form>
+                    <div class="mt-3 text-center">
+                        <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Get In Touch</h5>
+                    <p class="mb-4">Contact us for any questions about pet adoption</p>
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Kurmitola, Airport, Dhaka, Bangladesh</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>pet.info@gmail.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+8801700000000</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Quick Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-body mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                        <a class="text-body mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-body mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Services</a>
+                        <a class="text-body mb-2" href="product.html"><i class="bi bi-arrow-right text-primary me-2"></i>Products</a>
+                        <a class="text-body" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4">Newsletter</h5>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control p-3" placeholder="Your Email">
+                            <button class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white" href="#">Pet Management System</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/pets.js"></script>
+    <script src="js/forms.js"></script>
+</body>
+</html> 
