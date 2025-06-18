@@ -17,12 +17,10 @@ Admin Account:
   Password: 213902037
   
 
+With Database: https://pet-mangement-system.netlify.app/ 
 
 
-
-
-
-https://pet-management-system-dmr-dulalcsecod.netlify.app/
+Without Database: https://pet-management-system-dmr-dulalcsecod.netlify.app/
 
 
 
